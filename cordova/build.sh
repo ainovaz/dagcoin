@@ -100,7 +100,7 @@ if [ ! -d $PROJECT ]; then
 	cordova plugin add cordova-plugin-statusbar
 	checkOK
 
-	cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME=byteball-tn
+	cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME=dagcoin-tn
 	checkOK
 
 	cordova plugin add cordova-plugin-inappbrowser

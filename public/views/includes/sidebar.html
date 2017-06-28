@@ -17,6 +17,16 @@
 			<div class="size-12" ng-show="item.n > 1" translate>{{item.m}}-of-{{item.n}}</div>
 		</li>
 		<li>
+			<a ng-click="sidebar.closeMenu(); $root.go('correspondentDevices')" class="oh">
+				<i class="icon-arrow-right3 size-18 right m10t vm"></i>
+				<i class="fi-plus size-24 icon vm"></i>
+				<div class="tu text-bold">
+					<span class="size-12" translate>Paired devices</span>
+				</div>
+				<div translate>Co-signers for multisig</div>
+			</a>
+		</li>
+		<li>
 			<a ng-click="sidebar.closeMenu(); $root.go('preferences')" class="oh">
 				<i class="icon-arrow-right3 size-18 right m10t vm"></i>
 				<i class="fi-widget size-24 icon vm"></i>

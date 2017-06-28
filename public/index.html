@@ -29,10 +29,11 @@
         <div ng-include="'views/includes/alert.html'" ng-if="index.showAlert"></div>
         <div id="sectionContainer">
           <div id="mainSection">
-            <section ui-view="main"
-              ng-class="{
-                'main': index.hasProfile
-              }"></section>
+			<section ui-view="main"
+				ng-class="{
+			'main': index.hasProfile
+			}" ng-show="!index.$state.includes('correspondentDevices')"></section>
+			<div ui-view="chat" ng-show="index.$state.includes('correspondentDevices')" class="main" style="overflow: auto;"></div>
           </div>
         </div>
         <a class="close-menu" ng-click="index.closeMenu()"></a>
